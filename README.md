@@ -8,13 +8,13 @@ A 3D Printed Robot Arm Controller Using cheapest components possible: Arduino Un
 
 [1 of HiLetgo 2pcs PCA9685 16 Channel 12-Bit PWM Servo Motor Driver IIC Module for Arduino Robot](https://www.amazon.com/gp/product/B07BRS249H)
 
-[or other adafruit 16-channel-pwm-servo-driver](https://learn.adafruit.com/16-channel-pwm-servo-driver)
+[or other Adafruit 16-channel-pwm-servo-driver](https://learn.adafruit.com/16-channel-pwm-servo-driver)
 
 [2pc of CenryKay MG90S Servo 9G Micro Servo Motor，6PCS MG90S Metal Geared Servo Motor for Arduino Raspberry Pi](https://www.amazon.com/gp/product/B07RQPJ9WV)
 
 2 x  maybe [this one? Hitec RCD 31422S HS-422 Deluxe Servo](https://hitecrcd.com/products/servos/analog/sport-2/hs-422/product) from  Local hobby store
 
-[1 x for sholder need heavy duty: Hitec hs-805mg ](https://hitecrcd.com/products/servos/analog/giant-analog/hs-805mg/product)
+[1 x for shoulder need heavy duty: Hitec hs-805mg ](https://hitecrcd.com/products/servos/analog/giant-analog/hs-805mg/product)
 
 
 # Inspiration and 3D model
