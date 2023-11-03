@@ -17,6 +17,9 @@ A 3D Printed Robot Arm Controller Using cheapest components possible: Arduino Un
 [1 x for shoulder need heavy duty: Hitec hs-805mg ](https://hitecrcd.com/products/servos/analog/giant-analog/hs-805mg/product)
 
 
+![Screenshot of Application](images/screenshot.png "Screenshot of My Application")
+
+
 # Inspiration and 3D model
 After struggling with 3D printing for over 13 years, I printed out this a while back (sometime after 2022) but was disappointed in the control software I was using. I recently tried to use ChatGPT to see if it could complete the simplified code I no longer have faster than I did. It wasn't faster, but the libraries were far more terse and I wasn't wasting time on language selection. 
 
