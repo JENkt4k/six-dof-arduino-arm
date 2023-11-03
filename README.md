@@ -23,10 +23,10 @@ After struggling with 3D printing for over 13 years, I printed out this a while 
 Biggest improvement since last shot. Gen AI and ChatGPT
 
 Things that improved:
-- Ardunino is aamazing!!!
-- Adafruit libs given in GPT example were much more consice
-- Refactoring to more modular code was the largest cost but was forced to reduce code drops and drifting. Large text prompts struggle bying a few hundred lines.
-- less invbested in code. I'm ADHD and code obcessed. releasing imperfect code is terrifying, this is less so
+- Ardunino is amazing!!!
+- Adafruit libs given in GPT example were much more concise
+- Refactoring to more modular code was the largest cost but was forced to reduce code drops and drifting. Large text prompts struggle being a few hundred lines.
+- less invested in code. I'm ADHD and code obsessed. releasing imperfect code is terrifying, this is less so
 
 ## File Structure
 ```sql
