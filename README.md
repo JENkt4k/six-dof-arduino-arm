@@ -4,8 +4,10 @@ A 3D Printed Robot Arm Controller Using cheapest components possible: Arduino Un
 [Uno (current rev3) any version should work](https://docs.arduino.cc/hardware/uno-rev3)
 
 [Arduino IDE](https://www.arduino.cc/en/software)
++ with library from Arduino import manager labeled "Adafruit PMW Servo Driver" I think [this](https://adafruit.github.io/Adafruit-PWM-Servo-Driver-Library/html/class_adafruit___p_w_m_servo_driver.html)
 
 [1 of HiLetgo 2pcs PCA9685 16 Channel 12-Bit PWM Servo Motor Driver IIC Module for Arduino Robot](https://www.amazon.com/gp/product/B07BRS249H)
+
 
 
 # Inspiration and 3D model
