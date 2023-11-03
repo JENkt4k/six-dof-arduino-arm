@@ -12,5 +12,41 @@ Things that improved:
 - Refactoring to more modular code was the largest cost but was forced to reduce code drops and drifting. Large text prompts struggle bying a few hundred lines.
 - less invbested in code. I'm ADHD and code obcessed. releasing imperfect code is terrifying, this is less so
 
-TBC ...
+## File Structure
+```sql
+
+/six-dof-arduino-arm
+|-- app.py
+|-- pwm_control_panel.py
+|-- servo_slider.py
+|-- arduino_manager.py
+|-- servo_manager.py
+|-- settings.py
+|-- dialog.py
+|-- images/
+|   |-- arm_diagram.png
+|   |-- servo_0.png
+|   |-- servo_1.png
+|   ... (and so on for each servo image)
+|-- settings.pkl  (or some other settings storage file)
+```
+
+https://github.com/JENkt4k/six-dof-arduino-arm.git
+
+Here's a breakdown of what each file and directory is used for:
+
+* app.py: This is the entry point of your application. It initializes and runs the main application window and ties all the components together.
+* pwm_control_panel.py: Contains the PWMControlPanel class responsible for creating and managing the set of servo sliders and their associated images.
+* servo_slider.py: Contains the ServoSlider compound widget class which includes a slider, a label, and an entry widget for each servo.
+arduino_manager.py: Manages the communication with the Arduino, including sending commands and connecting/disconnecting.
+servo_manager.py: Handles the logic for updating servo positions, including debouncing and maintaining the state.
+settings.py: Manages loading and saving user settings (e.g., number of servos, image paths).
+dialog.py: Contains the SettingsDialog class that creates and manages the settings dialog window.
+images/: A directory containing all the images used by the application, such as diagrams for each servo or a single arm diagram.
+settings.pkl: A file where user settings are persisted between sessions. This might be a pickle file or another format like JSON or INI.
+This structure keeps each component of the application isolated and focused on a single responsibility, which is beneficial for maintenance and scalability. It also makes it easy to locate files related to specific parts of the application.
+
+
+
+
   
