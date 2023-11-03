@@ -8,6 +8,8 @@ A 3D Printed Robot Arm Controller Using cheapest components possible: Arduino Un
 
 [1 of HiLetgo 2pcs PCA9685 16 Channel 12-Bit PWM Servo Motor Driver IIC Module for Arduino Robot](https://www.amazon.com/gp/product/B07BRS249H)
 
+[or other adafruit 16-channel-pwm-servo-driver](https://learn.adafruit.com/16-channel-pwm-servo-driver)
+
 
 
 # Inspiration and 3D model
