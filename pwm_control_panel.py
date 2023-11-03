@@ -8,13 +8,14 @@ class PWMControlPanel(tk.Frame):
     def __init__(self, parent, settings, arduino_manager, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.settings = settings
-        self.arm_image_path = settings.get('arm_image', 'Arduino-Robot-Arm-3D-Model.png')
+        self.image_path_path = settings.get('image_path', 'Arduino-Robot-Arm-3D-Model.png')
         self.arduino_manager = arduino_manager
         self.servo_sliders = []
         self.last_positions = [-1] * 6  # Initialize with invalid positions
         self.last_command_time = [0] * 6  # Initialize last command times
         self.debounce_delay = 0.015  # Debounce delay in seconds
         self.create_widgets()
+        self.load_image_path()
         self.set_state('disabled')  # Initially disable all widgets
 
     def create_widgets(self):
@@ -60,11 +61,11 @@ class PWMControlPanel(tk.Frame):
             servo_slider.grid(row=i, column=0, padx=10, pady=5, sticky="ew")
             self.servo_sliders.append(servo_slider)
 
-    def load_arm_image(self):
+    def load_image_path(self):
         try:
-            arm_image = Image.open(self.arm_image_path)
-            arm_image.thumbnail((200, 200))  # Resize to fit the GUI
-            arm_photo = ImageTk.PhotoImage(arm_image)
+            image_path = Image.open(self.image_path_path)
+            image_path.thumbnail((200, 200))  # Resize to fit the GUI
+            arm_photo = ImageTk.PhotoImage(image_path)
             self.arm_label = tk.Label(self, image=arm_photo)
             self.arm_label.image = arm_photo  # Keep a reference!
             self.arm_label.grid(row=0, column=1, rowspan=self.settings['num_channels'], padx=10, pady=10, sticky='ns')
