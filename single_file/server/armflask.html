@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servo Control Panel</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Servo Control Panel</h1>
+    <div id="servo-controls">
+        <!-- Generate controls dynamically based on the number of servos -->
+    </div>
+    <script>
+        function moveServo(servoId, position) {
+            $.ajax({
+                url: '/move_servo',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ servo_id: servoId, position: position }),
+                success: function(response) {
+                    console.log('Servo moved:', response);
+                },
+                error: function(error) {
+                    console.error('Error moving servo:', error);
+                }
+            });
+        }
+        // Add event listeners to your controls that call moveServo()
+    </script>
+</body>
+</html>
