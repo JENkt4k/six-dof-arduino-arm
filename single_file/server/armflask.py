@@ -14,6 +14,7 @@ def move_servo():
     servo_id = data['servo_id']
     position = data['position']
     command = f"S{servo_id},{position}\n"
+    print(command)
     arduino_serial.write(command.encode())
     return {'status': 'OK'}
 

@@ -159,3 +159,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 images/Arduino-Robot-Arm-3D-Model.png
+single_file/server/armflask.py
+.vscode/c_cpp_properties.json
+.vscode/arduino.json
